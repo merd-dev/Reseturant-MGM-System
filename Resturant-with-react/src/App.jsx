@@ -10,7 +10,7 @@ function App() {
   return (
     <>
      <Navbar/>
-     <Header />
+     {/* <Header />
      <AboutUs/>
      <SpecialMenu/>
      <Chef/>
@@ -18,7 +18,7 @@ function App() {
      <Laurels/>
      <Gallery/>
      <FindUs/>
-     <Footer/>
+     <Footer/> */}
     </>
   );
 }
