@@ -5,11 +5,13 @@
     align-items: center;
     background: var(--color-black);
     padding: 10px 20px;
+    
 }
 .app-navbar-logo{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+   
 }
 .app-navbar-logo img{
     width:150px;
@@ -27,7 +29,7 @@
     cursor: pointer;
 }
 .app-navbar-links li:hover{
-    color:var(--color-gray);
+    color:var(--color-grey);
 }
 .app-navbar-login{
     display:flex;
@@ -46,7 +48,7 @@
 .app-navbar-login div{
     width:1px;
     height: 30px;
-    background-color: var(--color-gray);
+    background-color: var(--color-grey);
 }
 .app-navbar-smallscreen{
     display:none;
@@ -70,6 +72,9 @@
     position: absolute;
     top: 20px;
     right: 20px;
+}
+.app-navbar-smallscreen-links{
+    list-style: none;
 }
 .app-navbar-smallscreen-links li{
     margin:2rem;

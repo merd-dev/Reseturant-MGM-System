@@ -10,8 +10,8 @@ function App() {
   return (
     <>
      <Navbar/>
-     {/* <Header />
-     <AboutUs/>
+     <Header />
+     {/* <AboutUs/>
      <SpecialMenu/>
      <Chef/>
      <Intro/>

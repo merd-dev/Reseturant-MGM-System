@@ -1,0 +1,115 @@
+.app-header {
+  background-color: var(--color-black);
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  color: white;
+}
+
+.app-wrapper-img {
+  display: flex;
+  justify-content: center;
+}
+
+.app-wrapper-img img {
+  width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.app-header-h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;;
+  line-height: 117px;
+  font-size: 90px;
+}
+.custom-button{
+    box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.3);
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+    box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.3);
+}
+.animated-border-button:hover::before {
+  left: 100%;
+}
+@media (min-width: 2000px) {
+  .app-header {
+    padding: 4rem;
+    gap: 5rem;
+  }
+  .app-header-h1 {
+    font-size: 120px;
+  }
+  .custom-button {
+    width: 180px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+/* ✅ For Tablets & Medium Screens (Max Width: 1150px) */
+@media (max-width: 1150px) {
+  .app-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: auto;
+    padding: 3rem;
+  }
+  .app-header-h1 {
+    font-size: 60px;
+  }
+  .app-wrapper-img img {
+    width: 60%;
+  }
+}
+
+/* ✅ For Small Screens (Max Width: 650px) */
+@media (max-width: 650px) {
+  .app-header {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem;
+  }
+  .app-header-h1 {
+    font-size: 45px;
+    line-height: 1.1;
+  }
+  .app-wrapper-img img {
+    width: 80%;
+  }
+  .custom-button {
+    width: 130px;
+    height: 35px;
+    font-size: 0.9rem;
+  }
+}
+
+/* ✅ For Mobile Screens (Max Width: 450px) */
+@media (max-width: 450px) {
+  .app-header {
+    padding: 1.5rem;
+  }
+  .app-header-h1 {
+    font-size: 35px;
+  }
+  .app-wrapper-img img {
+    width: 90%;
+  }
+  .custom-button {
+    width: 120px;
+    height: 32px;
+    font-size: 0.8rem;
+  }
+}

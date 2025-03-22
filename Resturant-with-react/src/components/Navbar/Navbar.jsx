@@ -24,7 +24,7 @@ const Navbar = () => {
         <a href="#">Book Table</a>
       </div>
       <div className="app-navbar-smallscreen">
-        <GiHamburgerMenu color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
+        <GiHamburgerMenu cursor="pointer" color="#fff" fontSize={27} onClick={() => setToggleMenu(true)} />
         {toggleMenu && (
           <div className="app-navbar-smallscreen-overlay flex-center slide-bottom">
             <MdOutlineRestaurantMenu
