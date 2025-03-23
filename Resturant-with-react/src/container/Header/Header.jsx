@@ -8,7 +8,7 @@ const Header = () => (
     <div className="app__wrapper_info">
       <SubHeading title={"Chase the new flavour"} />
       <h1 className="app-header-h1">The Key to Fine Dining</h1>
-      <p className="p__opensans" style={{ margin: "2rem 0" }}>
+      <p className="left-align p__opensans" style={{ margin: "2rem 0" }}>
         Indulge in a culinary journey where flavors come alive. The Key to Fine
         Dining isn’t just about food—it’s about an unforgettable experience.<br/> 
         🔥Savor hand-crafted dishes made with the finest ingredients. <br />
