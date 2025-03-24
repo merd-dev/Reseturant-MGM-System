@@ -1,4 +1,5 @@
 .app-navbar{
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 10px;
+    height: auto;
    
 }
 .app-navbar-logo img{

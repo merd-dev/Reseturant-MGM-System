@@ -2,7 +2,7 @@ import React from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
-import images from "../../constants/images";
+import images from "../../assets/eyu.jpg";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -10,7 +10,11 @@ const Navbar = () => {
   return (
     <nav className="app-navbar">
       <div className="app-navbar-logo">
-        <img src={images.gericht} alt="app logo" />
+        <img
+          src={images}
+          alt="app logo"
+          style={{ width: "30px", height: "auto" }}
+        />
       </div>
 
       <ul className="app-navbar-links">
