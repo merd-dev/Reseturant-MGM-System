@@ -1,0 +1,30 @@
+.app-chef-content_quote{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;   
+}
+.app-chef-content_quote img{
+    width: 47px;
+    height: 40px;
+    margin: 0 1rem 1rem 0;
+}
+.app-chef-sign{
+    width: 100%;
+    margin: 3rem;
+}
+.app-chef-sign p:first-child{
+    font-family: var(--font-base);
+    font-weight: 400;
+    font-size: 32;
+    line-height: 41px;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    color: var(--color-golden);
+}
+.app-chef-sign img{
+    width: 250px;
+    margin-top: 3rem;
+}
+
+
+

@@ -1,29 +1,31 @@
 import React from "react";
-import images from "../../assets/eating.jpeg";
+import images from "../../assets/eat.webp";
 import images2 from "../../assets/restaurant.jpg";
 
 import "./Welcome.css";
 
 const Welcome = () => (
-  <div className="app-Welcome app_wrapper section-padding" id="home">
-     <div className="app-wrapper_img">
-        <img src={images} alt="welcome image" className="images" />
-      </div>
-      <div className="app-wrapper_img">
-        <img src={images2} alt="welcome2 image" className="images" />
+  <div className="app__bg app__wrapper section-padding" id="home">
+    <div className="app-wrapper_img">
+      <img src={images} alt="welcome image" className="images" />
+    </div>
+    <div className="app-wrapper_img">
+      <img src={images2} alt="welcome2 image" className="images" />
     </div>
     <div className="app-text">
+      <h1 className="app-welcome-h1">Welcome to Eyuel Restaurant</h1>
       <p className="left-align p__opensans" style={{ margin: "2rem 0" }}>
-        Indulge in a culinary journey where flavors come alive. The Key to Fine
-        Dining isn’t just about food—it’s about an unforgettable experience.
-        <br />
-        🔥Savor hand-crafted dishes made with the finest ingredients. <br />
-        🍷 Immerse yourself in a world of elegance and taste.
-        <br />
-        🌟 Experience perfection in every bite.
+        Experience the joy of great food and warm hospitality. Our chefs craft
+        each dish with passion, using the finest ingredients to create
+        unforgettable flavors. Whether it's a family gathering, a romantic
+        dinner, or a special treat, we promise a meal that delights your heart
+        and taste buds. Delicious food, happy moments—served with love!
       </p>
+      <button type="button" className="custom-button">
+        Discover more
+      </button>
     </div>
   </div>
 );
 
-export default Welcome;
+export default Welcome; 
