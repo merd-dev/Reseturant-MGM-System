@@ -4,7 +4,7 @@ import './AboutUs.css';
 
 const AboutUs = () => (
   <div>
-    AboutUs
+   <h1 className='about'>hi merd</h1>
   </div>
 );
 

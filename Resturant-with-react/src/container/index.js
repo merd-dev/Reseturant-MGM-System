@@ -6,7 +6,7 @@ import Gallery from './Gallery/Gallery';
 import Header from './Header/Header';
 import Intro from './Intro/Intro';
 import Laurels from './Laurels/Laurels';
-import SpecialMenu from './Menu/SpecialMenu';
+import menu from './Menu/menu';
 
 export {
   AboutUs,
@@ -17,5 +17,5 @@ export {
   Header,
   Intro,
   Laurels,
-  SpecialMenu,
+  menu,
 };

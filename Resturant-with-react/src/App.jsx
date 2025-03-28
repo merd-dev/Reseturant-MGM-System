@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Chef, Footer, Gallery, Header, Intro, Laurels } from "./container";
 import Welcome from "./container/Welcome/Welcome.jsx";
 import { Navbar } from "./components";
-import About from "./container/AboutUs/AboutUs";
+import About from "./container/AboutUs/AboutUs.jsx";
 import Contact from "./container/Findus/FindUs";
-import Menu from "./container/Menu/SpecialMenu";
+import Menu from "./container/Menu/menu";
 import Service from "./container/Service/service";
 import "./App.css";
 
@@ -20,7 +20,7 @@ function App() {
           element={
             <>
               <Header />
-              <Welcome/>
+              <Welcome />
               <Chef />
               <Intro />
               <Laurels />
