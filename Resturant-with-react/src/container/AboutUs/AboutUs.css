@@ -1,5 +1,17 @@
-.about{
-    color: coral;
-    font-size: 50px;
-    padding-top: 70px;
+.app-wrapper {
+  font-size: 30px;
+  padding-top: 70px;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+.app-h1 {
+  color: white;
+  text-align: center;
+}
+.app-p {
+  color: var(--color-golden);
+  text-align: center;
+  font-size: 45px;
+  font-family: var(--font-base);
 }
