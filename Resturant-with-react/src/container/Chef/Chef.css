@@ -30,7 +30,11 @@
         width: 5rem;
     }
 }
-
+@media screen and (max-width: 650px) {
+    .app-wrapper-info{
+        min-width: 100%;
+    }
+}
 @media screen and (max-width: 450px) {
     .app__chef-sign img {
         width: 80%;
