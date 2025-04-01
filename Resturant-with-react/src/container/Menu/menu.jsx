@@ -4,12 +4,14 @@ import "./menu.css";
 
 const menu = () => (
   <div>
-    <h2 className='menu'>
-      Lorem ipsum dolor loerm Lorem ipsum dolor sit amet consectetur adipisicing
-      elit. Maxime harum ut quis magnam a voluptatum minima quidem dolores modi
-      voluptates repudiandae, dolor, sint optio, soluta hic enim dolorem
-      deserunt ipsa
-    </h2>
+    <div className="app__aboutus-header app__bg section__padding">
+      <div className="app__header-content">
+        <h1 className="app-h1">Menu</h1>
+        <div className="app__text">
+          <p className="app-p">Our special menu with your choice</p>
+        </div>
+      </div>
+    </div>
   </div>
 );
 

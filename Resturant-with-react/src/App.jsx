@@ -14,7 +14,6 @@ function App() {
     <Router>
       <Navbar />
       <Routes>
-        {/* Define Routes for Different Pages */}
         <Route
           path="/"
           element={

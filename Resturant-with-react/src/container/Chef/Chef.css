@@ -4,8 +4,8 @@
     align-items: flex-end;   
 }
 .app-chef-content_quote img{
-    width: 47px;
-    height: 40px;
+    width: 3rem;
+    height: 2rem;
     margin: 0 1rem 1rem 0;
 }
 .app-chef-sign{
@@ -22,12 +22,12 @@
     color: var(--color-golden);
 }
 .app-chef-sign img{
-    width: 250px;
+    width: 50%;
     margin-top: 3rem;
 }
 @media screen and (min-width: 2000px) {
     .app__chef-sign img {
-        width: 370px;
+        width: 5rem;
     }
 }
 
