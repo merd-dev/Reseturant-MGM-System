@@ -19,6 +19,9 @@ import privateDining from '../assets/private-dining.jpg';
 import cookingClass from '../assets/cooking-class.jpg';
 import specialEvents from '../assets/special-events.webp';
 import wineTasting from '../assets/wine-pairing.jpg';
+import client1 from '../assets/client1.jpg';
+import client2 from '../assets/client2.webp';
+import specials from '../assets/special-foods.jpeg';
 import award01 from "../assets/award01.png";
 import award02 from "../assets/award02.png";
 import award03 from "../assets/award03.png";
@@ -56,4 +59,7 @@ export default {
   cookingClass,
   specialEvents,
   wineTasting,
+  client1,
+  client2,
+  specials,
 };

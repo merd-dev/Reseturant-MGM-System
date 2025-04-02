@@ -55,6 +55,21 @@ h2{
     margin: 2rem 0;
     width: 100%;
 }
+/* Inherits all your existing menu styles */
+.app__specialMenu-menu_appetizers,
+.app__specialMenu-menu_mains,
+.app__specialMenu-menu_desserts {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+.app__specialMenu-menu_desserts {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+/* Add any additional specific styles for food menu */
 
 @media screen and (min-width: 2000px) {
     .app__specialMenu-menu_img {

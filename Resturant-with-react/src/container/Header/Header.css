@@ -40,6 +40,12 @@
     transition: all 0.3s ease-in;
     box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.3);
 }
+.custom-button:hover{
+    background-color: var(--color-golden);
+    color: var(--color-black);
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.5);
+}
 .animated-border-button:hover::before {
   left: 100%;
  }
@@ -67,6 +73,7 @@
   .custom-button {
     display: block;
     margin: 1rem auto;
+   
   }
 }
 
