@@ -1,0 +1,157 @@
+/* Base Styles */
+.app__restaurant {
+  background: var(--color-black);
+  color: var(--color-white);
+}
+
+/* Header */
+.app__restaurant-header {
+  background: url('../../assets/bg.jpg') center/cover no-repeat;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.app__header-content h1 {
+  color: var(--color-golden);
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+
+.app__text p {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}
+
+/* Service Sections */
+.app__restaurant-service {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8rem 0;
+}
+
+.reverse__flex {
+  flex-direction: row-reverse;
+}
+
+.app__restaurant-service_image {
+  flex: 1;
+  margin: 0 4rem;
+}
+
+.app__restaurant-service_image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.app__restaurant-service_info {
+  flex: 1;
+}
+
+.service__features {
+  margin: 2rem 0;
+}
+
+.service__features p {
+  margin: 1rem 0;
+  color: var(--color-grey);
+}
+
+.service__features span {
+  color: var(--color-golden);
+  font-weight: 700;
+}
+
+/* Extras Section */
+.app__restaurant-extras {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem 0;
+}
+
+.extras__card {
+  flex: 1;
+  margin: 0 1.5rem;
+  text-align: center;
+}
+
+.extras__card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+}
+
+.extras__card h3 {
+  color: var(--color-golden);
+  margin-bottom: 1rem;
+}
+
+/* Testimonials */
+.app__restaurant-testimonials {
+  text-align: center;
+}
+
+.testimonials__grid {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.testimonial__card {
+  background: var(--color-grey);
+  padding: 3rem;
+  margin: 0 2rem;
+  border-radius: 10px;
+  max-width: 500px;
+}
+
+.testimonial__author {
+  margin-top: 2rem;
+}
+
+.testimonial__author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1150px) {
+  .app__restaurant-service {
+    flex-direction: column;
+  }
+  
+  .app__restaurant-service_image {
+    margin: 4rem 0;
+  }
+  
+  .app__restaurant-extras {
+    flex-direction: column;
+  }
+  
+  .extras__card {
+    margin: 2rem 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .app__header-content h1 {
+    font-size: 3rem;
+  }
+  
+  .testimonials__grid {
+    flex-direction: column;
+  }
+  
+  .testimonial__card {
+    margin: 1rem 0;
+  }
+}

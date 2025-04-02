@@ -13,6 +13,12 @@ import spoon from "../assets/spoon.svg";
 import welcome from "../assets/welcome.png";
 import findus from "../assets/findus.png";
 import laurels from "../assets/laurels.png";
+import catering from '../assets/catering.jpg';
+import chefsTable from '../assets/chef-table.jpg';
+import privateDining from '../assets/private-dining.jpg';
+import cookingClass from '../assets/cooking-class.jpg';
+import specialEvents from '../assets/special-events.webp';
+import wineTasting from '../assets/wine-pairing.jpg';
 import award01 from "../assets/award01.png";
 import award02 from "../assets/award02.png";
 import award03 from "../assets/award03.png";
@@ -44,4 +50,10 @@ export default {
   sign,
   quote,
   gericht,
+  catering,
+  chefsTable,
+  privateDining,
+  cookingClass,
+  specialEvents,
+  wineTasting,
 };

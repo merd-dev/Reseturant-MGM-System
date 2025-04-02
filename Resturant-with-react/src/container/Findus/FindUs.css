@@ -1,0 +1,142 @@
+/* Contact Section */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  background: var(--color-black);
+  gap: 40px;
+  padding: 40px 20px;
+  justify-content: space-between;
+}
+
+/* Contact Text Section */
+.contact-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #4e86be;
+}
+
+.contact-text h2 span {
+  color: #3498db;
+}
+
+.contact-text h4 {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #7f8c8d;
+}
+
+.contact-text p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #acb4bd;
+}
+
+.contact-text .list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-text .list li {
+  margin-bottom: 15px;
+}
+
+.contact-text .list li a {
+  color: #adbbc9;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: color 0.3s ease;
+}
+
+.contact-text .list li a:hover {
+  color: #3498db;
+}
+.contact-icons i {
+  height: 45px;
+  width: 45px;
+  color: #adbbc9;;
+  font-size: 22px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  margin-right: 15px;
+  transition: all 0.45s ease;
+}
+
+.contact-icons i:hover {
+  color: var(--main-color);
+}
+/* Contact Form Section */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form form input,
+.contact-form form textarea {
+  width: 80%;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.contact-form form input:focus,
+.contact-form form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.contact-form form textarea {
+  min-height: 180px;
+  resize: vertical;
+}
+
+.contact-form .submit {
+  padding: 15px 30px;
+  background:var(--color-golden);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.contact-form .submit:hover {
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+  
+  .contact-text, .contact-form {
+    width: 100%;
+  }
+  
+  .contact-text h2 {
+    font-size: 2rem;
+  }
+}
