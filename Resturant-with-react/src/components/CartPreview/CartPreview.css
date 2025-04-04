@@ -1,0 +1,32 @@
+/* src/components/CartPreview/CartPreview.css */
+.cart-preview {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: var(--color-golden);
+  color: var(--color-black);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  z-index: 100;
+  animation: slideUp 0.3s ease;
+}
+
+.cart-preview-count {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

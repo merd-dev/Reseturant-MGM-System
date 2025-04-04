@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { OrderContext } from "../../components/OrderContext/OrderContext.jsx";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -6,6 +7,8 @@ import images from "../../assets/eyu.jpg";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { cart } = useContext(OrderContext);
+  const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
   const [toggleMenu, setToggleMenu] = React.useState(false);
   return (
     <nav className="app-navbar">
@@ -33,13 +36,16 @@ const Navbar = () => {
         <li>
           <Link to="/contact">Contact</Link>
         </li>
+        <li>
+          <Link to="/order">Order ({totalItems})</Link>
+        </li>
       </ul>
 
-      <div className="app-navbar-login">
+      {/* <div className="app-navbar-login">
         <Link to="/login">Login/Register</Link>
         <div />
-        <Link to="/book-table">Book Table</Link>
-      </div>
+        <Link to="/book-table">Order</Link>
+      </div> */}
 
       {/* Small Screen Menu */}
       <div className="app-navbar-smallscreen">
@@ -82,6 +88,9 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
+              <Link to="/order" onClick={() => setToggleMenu(false)}>
+                Order ({totalItems})
+              </Link>
             </ul>
           </div>
         )}
