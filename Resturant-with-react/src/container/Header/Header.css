@@ -30,16 +30,21 @@
   line-height: 117px;
   font-size: 90px;
 }
-.custom-button{
+.custom-button {
     box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.3);
+    color: black;
     width: 100px;
     height: 30px;
     cursor: pointer;
     border: none;
     border-radius: 8px;
     transition: all 0.3s ease-in;
-    box-shadow: 3px 3px 10px rgba(255, 157, 0, 0.3);
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center;     /* Center text vertically */
+    
 }
+
 .custom-button:hover{
     background-color: var(--color-golden);
     color: var(--color-black);

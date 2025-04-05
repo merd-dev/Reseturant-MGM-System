@@ -19,7 +19,7 @@ const Header = () => (
         <br />
         🌟 Experience perfection in every bite.
       </p>
-      <Link to="/menu" className="custom__button">
+      <Link to="/menu" className="custom-button">
         Explore Menu
       </Link>
     </div>

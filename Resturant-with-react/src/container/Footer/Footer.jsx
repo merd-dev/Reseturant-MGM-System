@@ -30,9 +30,28 @@ const Footer = () => (
           style={{ marginTop: 15 }}
         />
         <div className="app__footer-links_icons">
-          <FiFacebook />
-          <FiTwitter />
-          <FiInstagram />
+          {/* Updated social media links */}
+          <a
+            href="https://www.facebook.com/restaurantname" // Replace with your restaurant's Facebook URL
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiFacebook />
+          </a>
+          <a
+            href="https://twitter.com/restaurantname" // Replace with your restaurant's Twitter URL
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiTwitter />
+          </a>
+          <a
+            href="https://www.instagram.com/restaurantname" // Replace with your restaurant's Instagram URL
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FiInstagram />
+          </a>
         </div>
       </div>
 

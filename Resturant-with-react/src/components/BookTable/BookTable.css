@@ -31,3 +31,11 @@ body{
   border: none;
   cursor: pointer;
 }
+.chef-table-option {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.chef-table-option input {
+  margin-right: 0.5rem;
+}
