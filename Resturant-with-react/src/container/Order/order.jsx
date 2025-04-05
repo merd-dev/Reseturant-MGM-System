@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { OrderContext } from "../../components/OrderContext/OrderContext.jsx";
 import { useNavigate } from "react-router-dom";
 import { images } from "../../constants";
@@ -8,6 +8,17 @@ const OrderPage = () => {
   const { cart, removeFromCart, updateQuantity, clearCart } =
     useContext(OrderContext);
   const navigate = useNavigate();
+  const [showCateringForm, setShowCateringForm] = useState(false);
+  const [cateringDetails, setCateringDetails] = useState({
+    eventType: "",
+    date: "",
+    guests: 50,
+    location: "",
+    specialRequests: "",
+    contactName: "",
+    contactEmail: "",
+    contactPhone: "",
+  });
 
   const calculateTotal = () => {
     return cart.reduce((total, item) => {
@@ -22,6 +33,24 @@ const OrderPage = () => {
     navigate("/");
   };
 
+  const handleCateringSubmit = (e) => {
+    e.preventDefault();
+    alert(
+      "Catering request submitted! We'll contact you shortly to discuss details."
+    );
+    setShowCateringForm(false);
+    // Here you would typically send the data to your backend
+    console.log("Catering request:", cateringDetails);
+  };
+
+  const handleCateringChange = (e) => {
+    const { name, value } = e.target;
+    setCateringDetails((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
+  };
+
   return (
     <div className="app__order app__bg">
       {/* Hero Header with Background */}
@@ -29,30 +58,174 @@ const OrderPage = () => {
         <div className="app__wrapper_info">
           <h1 className="headtext__cormorant">Your Order</h1>
           <p className="p__opensans" style={{ margin: "2rem 0" }}>
-            Review your selections before finalizing your dining experience
+            Review your selections or inquire about our catering services
           </p>
+          {cart.length === 0 && (
+            <button
+              className="custom__button"
+              onClick={() => setShowCateringForm(true)}
+            >
+              Request Catering Service
+            </button>
+          )}
         </div>
         <div className="app__wrapper_img">
           <img src={images.orderImage} alt="order header" />
         </div>
       </div>
 
+      {/* Catering Form Modal */}
+      {showCateringForm && (
+        <div className="catering-modal">
+          <div className="catering-modal-content">
+            <button
+              className="close-modal"
+              onClick={() => setShowCateringForm(false)}
+            >
+              &times;
+            </button>
+            <h2 className="headtext__cormorant">Catering Inquiry</h2>
+            <form onSubmit={handleCateringSubmit}>
+              <div className="form-group">
+                <label>Event Type</label>
+                <select
+                  name="eventType"
+                  value={cateringDetails.eventType}
+                  onChange={handleCateringChange}
+                  required
+                >
+                  <option value="">Select event type</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Corporate">Corporate Event</option>
+                  <option value="Birthday">Birthday Party</option>
+                  <option value="Anniversary">Anniversary</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Event Date</label>
+                  <input
+                    type="date"
+                    name="date"
+                    value={cateringDetails.date}
+                    onChange={handleCateringChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Number of Guests</label>
+                  <input
+                    type="number"
+                    name="guests"
+                    min="20"
+                    value={cateringDetails.guests}
+                    onChange={handleCateringChange}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Event Location</label>
+                <input
+                  type="text"
+                  name="location"
+                  value={cateringDetails.location}
+                  onChange={handleCateringChange}
+                  required
+                  placeholder="Address or venue name"
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Special Requests</label>
+                <textarea
+                  name="specialRequests"
+                  value={cateringDetails.specialRequests}
+                  onChange={handleCateringChange}
+                  rows="4"
+                  placeholder="Dietary restrictions, theme, etc."
+                />
+              </div>
+
+              <h3 className="headtext__cormorant" style={{ marginTop: "2rem" }}>
+                Contact Information
+              </h3>
+
+              <div className="form-row">
+                <div className="form-group">
+                  <label>Your Name</label>
+                  <input
+                    type="text"
+                    name="contactName"
+                    value={cateringDetails.contactName}
+                    onChange={handleCateringChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Email</label>
+                  <input
+                    type="email"
+                    name="contactEmail"
+                    value={cateringDetails.contactEmail}
+                    onChange={handleCateringChange}
+                    required
+                  />
+                </div>
+              </div>
+
+              <div className="form-group">
+                <label>Phone Number</label>
+                <input
+                  type="tel"
+                  name="contactPhone"
+                  value={cateringDetails.contactPhone}
+                  onChange={handleCateringChange}
+                  required
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="custom__button"
+                style={{ marginTop: "1rem" }}
+              >
+                Submit Catering Request
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+
       {/* Order Content */}
       <div className="app__order-content app__wrapper section__padding">
-        {cart.length === 0 ? (
+        {cart.length === 0 && !showCateringForm ? (
           <div className="empty-order">
             <h2 className="headtext__cormorant">Your cart is empty</h2>
             <p className="p__opensans">
-              Begin your culinary journey by exploring our menu
+              Begin your culinary journey by exploring our menu or requesting
+              catering services
             </p>
-            <button
-              className="custom__button"
-              onClick={() => navigate("/menu")}
-            >
-              Browse Menu
-            </button>
+            <div className="empty-order-buttons">
+              <button
+                className="custom__button"
+                onClick={() => navigate("/menu")}
+              >
+                Browse Menu
+              </button>
+              <button
+                className="custom__button"
+                onClick={() => setShowCateringForm(true)}
+                style={{ marginLeft: "1rem" }}
+              >
+                Request Catering
+              </button>
+            </div>
           </div>
-        ) : (
+        ) : showCateringForm ? null : (
           <div className="order-container">
             <div className="order-items">
               {cart.map((item, index) => (
@@ -117,6 +290,12 @@ const OrderPage = () => {
               </div>
               <button className="custom__button" onClick={handleCheckout}>
                 Confirm Order
+              </button>
+              <button
+                className="custom__button catering-btn"
+                onClick={() => setShowCateringForm(true)}
+              >
+                Also Need Catering?
               </button>
             </div>
           </div>

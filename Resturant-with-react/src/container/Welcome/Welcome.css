@@ -21,6 +21,9 @@
 .app-text {
   margin-top: 1rem;
 }
+.custom-button{
+  background-color: white;
+}
 @media (max-width: 1150px) {
   .app-Welcome {
     grid-template-columns: 1fr 1fr; /* Switch to two-column layout */

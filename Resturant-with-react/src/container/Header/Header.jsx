@@ -2,6 +2,8 @@ import React from "react";
 import SubHeading from "../../components/SubHeading/SubHeading";
 import images from "../../constants/images";
 import "./Header.css";
+import { Link } from "react-router-dom";
+
 
 const Header = () => (
   <header className="app-header app_wrapper section_padding" id="home">
@@ -17,9 +19,9 @@ const Header = () => (
         <br />
         🌟 Experience perfection in every bite.
       </p>
-      <button type="button" className="custom-button">
+      <Link to="/menu" className="custom__button">
         Explore Menu
-      </button>
+      </Link>
     </div>
     <div className="app-wrapper-img">
       <img src={images.welcome} alt="header-img" className="header-image" />

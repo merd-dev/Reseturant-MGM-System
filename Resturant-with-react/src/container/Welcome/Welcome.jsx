@@ -3,7 +3,7 @@ import images from "../../assets/eat.webp";
 import images2 from "../../assets/restaurant.jpg";
 
 import "./Welcome.css";
-
+import { Link } from "react-router-dom";
 const Welcome = () => (
   <div className="app__bg app__wrapper section-padding" id="home">
     <div className="app-wrapper_img">
@@ -21,9 +21,9 @@ const Welcome = () => (
         dinner, or a special treat, we promise a meal that delights your heart
         and taste buds. Delicious food, happy moments—served with love!
       </p>
-      <button type="button" className="custom-button">
-        Discover more
-      </button>
+       <Link to="/about" className="custom__button">
+              Discover More
+            </Link>
     </div>
   </div>
 );

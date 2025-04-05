@@ -1,25 +1,28 @@
-import React from 'react';
+import React from "react";
 
-import { BsInstagram, BsArrowLeftShort, BsArrowRightShort } from 'react-icons/bs';
-import{SubHeading} from '../../components';
-import images from '../../constants/images.js';
+import {
+  BsInstagram,
+  BsArrowLeftShort,
+  BsArrowRightShort,
+} from "react-icons/bs";
+import { SubHeading } from "../../components";
+import images from "../../constants/images.js";
+import { Link } from "react-router-dom";
 
-
-import './Gallery.css';
+import "./Gallery.css";
 
 const Gallery = () => {
-    const scrollRef = React.useRef(null);
+  const scrollRef = React.useRef(null);
 
-    const scroll=(direction)=>{
-      const {current}= scrollRef;
+  const scroll = (direction) => {
+    const { current } = scrollRef;
 
-      if(direction==='left'){
-        current.scrollLeft-= 300;
-      }
-      else{
-        current.scrollLeft+= 300;
-      }
+    if (direction === "left") {
+      current.scrollLeft -= 300;
+    } else {
+      current.scrollLeft += 300;
     }
+  };
 
   return (
     <div className="app__bg app__gallery flex__center">
@@ -33,9 +36,9 @@ const Gallery = () => {
           lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Iure doloremque explicabo quaerat culpa maiores magnam deleniti
         </p>
-        <button type="button" className="custom-button">
+        <Link to="/menu" className="custom__button">
           View More
-        </button>
+        </Link>
       </div>
       <div className="app__gallery-images">
         <div className="app__gallery-images__container" ref={scrollRef}>
