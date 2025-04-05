@@ -11,6 +11,7 @@ import Service from "./container/Service/service";
 import "./App.css";
 import Order from "./container/Order/order.jsx";
 import CartPreview from "./components/CartPreview/CartPreview";
+import BookTable from "./components/BookTable/BookTable.jsx";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/order" element={<Order />} />
 
           <Route path="/contact" element={<Contact />} />
+          <Route path="/book-table" element={<BookTable />} />
         </Routes>
         <CartPreview />
       </Router>

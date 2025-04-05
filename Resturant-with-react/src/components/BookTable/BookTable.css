@@ -1,0 +1,33 @@
+body{
+  background-image: url('../../assets/bg.png'); /* adjust path as needed */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+.book-table-container {
+  padding: 2rem;
+  max-width: 500px;
+  margin: auto;
+  background: #f2f2f2;
+  border-radius: 10px;
+ 
+}
+
+.book-table-form input,
+.book-table-form button {
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.book-table-form button {
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

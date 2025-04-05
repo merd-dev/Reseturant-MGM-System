@@ -10,6 +10,7 @@ const Navbar = () => {
   const { cart } = useContext(OrderContext);
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
   const [toggleMenu, setToggleMenu] = React.useState(false);
+
   return (
     <nav className="app-navbar">
       <div className="app-navbar-logo">
@@ -41,11 +42,9 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* <div className="app-navbar-login">
-        <Link to="/login">Login/Register</Link>
-        <div />
-        <Link to="/book-table">Order</Link>
-      </div> */}
+      <div className="app-navbar-login">
+        <Link to="/book-table">Book Table</Link>
+      </div>
 
       {/* Small Screen Menu */}
       <div className="app-navbar-smallscreen">
@@ -88,9 +87,16 @@ const Navbar = () => {
                   Contact
                 </Link>
               </li>
-              <Link to="/order" onClick={() => setToggleMenu(false)}>
-                Order ({totalItems})
-              </Link>
+              <li>
+                <Link to="/order" onClick={() => setToggleMenu(false)}>
+                  Order ({totalItems})
+                </Link>
+              </li>
+              <li>
+                <Link to="/book-table" onClick={() => setToggleMenu(false)}>
+                  Book Table
+                </Link>
+              </li>
             </ul>
           </div>
         )}
