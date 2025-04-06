@@ -21,7 +21,7 @@ const Welcome = () => (
         dinner, or a special treat, we promise a meal that delights your heart
         and taste buds. Delicious food, happy moments—served with love!
       </p>
-       <Link to="/about" className="custom__button">
+       <Link to="/about" className="custom_button">
               Discover More
             </Link>
     </div>

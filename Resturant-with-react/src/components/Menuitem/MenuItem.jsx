@@ -31,7 +31,7 @@ const MenuItem = ({ title, price, tags }) => {
       <button
         className="custom__button"
         onClick={handleAddToCart}
-        style={{ marginTop: "1rem" }}
+        style={{ marginTop: "1rem" ,cursor:'pointer'}}
       >
         Add to Order
       </button>

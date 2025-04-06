@@ -52,7 +52,7 @@
   width: 80%;
 }
 
-.custom__button {
+.custom_button {
   background-color: var(--color-crimson);
     color: var(--color-black);
     font-family: var(--font-base);

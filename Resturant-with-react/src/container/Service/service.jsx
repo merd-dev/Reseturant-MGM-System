@@ -45,7 +45,7 @@ const RestaurantService = () => (
               <span>Extras:</span> Dedicated sommelier service
             </p>
           </div>
-          <Link to="/book-table" className="custom__button">
+          <Link to="/book-table" className="custom_button">
             Book Now
           </Link>
         </div>
@@ -71,7 +71,7 @@ const RestaurantService = () => (
               <span>Options:</span> Buffet or plated service
             </p>
           </div>
-          <Link to="/order" className="custom__button">
+          <Link to="/order" className="custom_button">
             Inquire
           </Link>
         </div>
@@ -105,7 +105,7 @@ const RestaurantService = () => (
               <span>Availability:</span> Thursday-Saturday evenings
             </p>
           </div>
-          <Link to="/book-table" className="custom__button">
+          <Link to="/book-table" className="custom_button">
             Reserve
           </Link>
         </div>

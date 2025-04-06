@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 
 const Header = () => (
-  <header className="app-header app_wrapper section_padding" id="home">
+  <header className="app-header app__bg app_wrapper section_padding" id="home">
     <div className="app__wrapper_info">
       <SubHeading title={"Chase the new flavour"} />
       <h1 className="app-header-h1">The Key to Fine Dining</h1>
@@ -19,7 +19,7 @@ const Header = () => (
         <br />
         🌟 Experience perfection in every bite.
       </p>
-      <Link to="/menu" className="custom-button">
+      <Link to="/menu" className="custom_button">
         Explore Menu
       </Link>
     </div>

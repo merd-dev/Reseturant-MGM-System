@@ -60,14 +60,7 @@ const OrderPage = () => {
           <p className="p__opensans" style={{ margin: "2rem 0" }}>
             Review your selections or inquire about our catering services
           </p>
-          {cart.length === 0 && (
-            <button
-              className="custom__button"
-              onClick={() => setShowCateringForm(true)}
-            >
-              Request Catering Service
-            </button>
-          )}
+        
         </div>
         <div className="app__wrapper_img">
           <img src={images.orderImage} alt="order header" />
@@ -190,7 +183,7 @@ const OrderPage = () => {
 
               <button
                 type="submit"
-                className="custom__button"
+                className="custom_button"
                 style={{ marginTop: "1rem" }}
               >
                 Submit Catering Request
@@ -211,13 +204,13 @@ const OrderPage = () => {
             </p>
             <div className="empty-order-buttons">
               <button
-                className="custom__button"
+                className="custom_button"
                 onClick={() => navigate("/menu")}
               >
                 Browse Menu
               </button>
               <button
-                className="custom__button"
+                className="custom_button"
                 onClick={() => setShowCateringForm(true)}
                 style={{ marginLeft: "1rem" }}
               >
@@ -288,12 +281,18 @@ const OrderPage = () => {
                   </p>
                 </div>
               </div>
-              <button className="custom__button" onClick={handleCheckout}>
+
+              <button
+                className="custom__button"
+                onClick={handleCheckout}
+                style={{ cursor: "pointer" }}
+              >
                 Confirm Order
               </button>
               <button
                 className="custom__button catering-btn"
                 onClick={() => setShowCateringForm(true)}
+                style={{ cursor: "pointer" }}
               >
                 Also Need Catering?
               </button>

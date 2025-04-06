@@ -37,8 +37,7 @@ const FindUs = () => (
         </div>
         <button
           type="button"
-          className="custom__button"
-          style={{ marginTop: "2rem" }}
+          className="custom_button"
         >
           Visit Us
         </button>

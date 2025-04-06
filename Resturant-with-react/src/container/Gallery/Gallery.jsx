@@ -36,7 +36,7 @@ const Gallery = () => {
           lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Iure doloremque explicabo quaerat culpa maiores magnam deleniti
         </p>
-        <Link to="/menu" className="custom-button">
+        <Link to="/menu" className="custom_button">
           View More
         </Link>
       </div>

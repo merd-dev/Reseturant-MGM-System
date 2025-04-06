@@ -8,6 +8,9 @@
 }
 
 /* Header Section */
+.app__wrapper_info{
+  margin-left: 50px;
+}
 .app__order-header {
   background: url('../../assets/bg.png');
   background-size: cover;

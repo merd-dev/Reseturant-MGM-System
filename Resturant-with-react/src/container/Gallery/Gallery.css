@@ -15,8 +15,8 @@
     padding-right: 2rem;
 }
 
-.app__gallery-content button {
-    margin-top: 1rem;
+.app__gallery-content p {
+    margin-bottom: 1rem;
 }
 
 .app__gallery-images {
