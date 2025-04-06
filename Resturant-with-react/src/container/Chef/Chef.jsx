@@ -16,14 +16,15 @@ const Chef = () => (
       <div className="app__chef-content">
         <div className="app__chef-content_quote">
           <img src={images.quote} alt="quote_image" />
-          <p className="p__opensans">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit auctor sit .
-          </p>
+          <p className="p__opensans">From Our Chef’s Heart to Your Plate</p>
         </div>
         <p className="p__opensans">
-          auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit.
-          Nulla scelerisque scelerisque congue ac consequat, aliquam molestie
-          lectus eu. Congue iaculis integer curabitur semper sit nunc.
+          At our restaurant, every dish is a reflection of passion, precision,
+          and purpose. Crafted by the hands of a dedicated chef, each plate
+          tells a story — from the freshest ingredients to the final garnish.
+          This is more than just food; it’s a curated experience, made with
+          heart and served with soul. Welcome to a place where flavor meets
+          finesse
         </p>
       </div>
 

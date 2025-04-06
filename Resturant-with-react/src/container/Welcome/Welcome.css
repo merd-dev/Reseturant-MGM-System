@@ -1,26 +1,29 @@
 .app-welcome-h1 {
+
   font-family: var(--font-base);
   color: var(--color-golden);
   font-weight: 700;
   letter-spacing: 0.04em;
-  margin-top: 100px;
 }
 
 .app-wrapper_img {
   text-align: center;
   margin-right: 70px;
 }
+
+
 .images {
   width: 300px;
   height: 350px;
   margin-left: 34px;
   object-fit: cover;
+  margin-top: 0;
 }
 .app-wrapper_img:nth-child(1) {
   margin-right: 10px;
 }
 .app-text {
-  margin-top: 1rem;
+  margin-top: 0;
 }
 
 @media (max-width: 1150px) {
@@ -42,7 +45,7 @@
     width: 100%;
     margin-right: 3px;
     margin-top: 4rem;
-    margin-bottom: -4rem;
+    margin-bottom: 3rem;
   }
   .app-welcome-h1 {
     font-size: 2rem; /* Reduce heading size */

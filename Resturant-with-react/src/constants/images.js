@@ -22,7 +22,7 @@ import wineTasting from '../assets/wine-pairing.jpg';
 import orderImage from '../assets/order-image.jpg';
 import client1 from '../assets/client1.jpg';
 import client2 from '../assets/client2.webp';
-import specials from '../assets/special-foods.jpeg';
+import specials from '../assets/specialfoods.jpeg';
 import award01 from "../assets/award01.png";
 import award02 from "../assets/award02.png";
 import award03 from "../assets/award03.png";

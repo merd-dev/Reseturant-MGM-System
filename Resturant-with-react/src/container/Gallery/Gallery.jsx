@@ -33,8 +33,9 @@ const Gallery = () => {
           className="p__opensans"
           style={{ color: "#AAAAA", marginTop: "2rem" }}
         >
-          lorem ipsum Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Iure doloremque explicabo quaerat culpa maiores magnam deleniti
+          A taste of our kitchen, captured in every shot. From sizzling starters
+          to sweet finales, explore the passion, color, and creativity that
+          define our dishes
         </p>
         <Link to="/menu" className="custom_button">
           View More
@@ -53,7 +54,14 @@ const Gallery = () => {
               key={`gallery_image-${index + 1}`}
             >
               <img src={image} alt="gallery_image" />
-              <BsInstagram className="gallery__image-icon" />
+
+              <a
+                href="https://www.instagram.com/restaurantname" // Replace with your restaurant's Instagram URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BsInstagram className="gallery__image-icon" />
+              </a>
             </div>
           ))}
         </div>
